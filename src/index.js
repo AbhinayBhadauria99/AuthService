@@ -19,8 +19,8 @@ const prepareAndStartServer = () => {
 
 
         const service = new UserService();
-        const newToken = service.createToken({ email: 'abcd@gmail.com', id: 1 });
-        console.log("new token is", newToken);
+        //   const newToken = service.createToken({ email: 'abcd@gmail.com', id: 1 });
+        //  console.log("new token is", newToken);
     });
 }
 
