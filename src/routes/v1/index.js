@@ -18,7 +18,13 @@ router.post(
 router.get(
     '/isAuthenticated',   //x-access-token should be given in headers of postman while using localhost:3001/api/v1/isAuthenticated
     UserController.isAuthenticated
-)
+);
+
+router.get(
+    '/isAdmin',
+    AuthRequestValidators.validateIsAdminRequest,
+    UserController.isAdmin
+);
 
 
 module.exports = router;
