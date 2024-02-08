@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken');
 const { JWT_KEY } = require('../config/serverConfig');
 const bcrypt = require('bcrypt');
 
+
 class UserService {
     constructor() {
         this.userRepository = new UserRepository();

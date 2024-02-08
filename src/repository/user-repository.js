@@ -8,7 +8,6 @@ class UserRepository {
             return user;
         } catch (error) {
             if (error.name == 'SequelizeValidationError') {
-                console.log("Creating new validation error");
                 throw new ValidationError(error);
             }
 
